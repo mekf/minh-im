@@ -2,7 +2,8 @@ doctype 5
 html
   head
     title= title
-    != css('style')
+    != css('app_styles')
+    != js('app_scripts')
   body
     header
       a(href='/') Root
@@ -12,4 +13,4 @@ html
     block content
     
     footer
-      p Running on NodeJS with Express, Jade and Stylus
+      p Running on NodeJS with Express, Jade, Stylus, and Zurb Foundation
