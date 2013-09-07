@@ -19,7 +19,7 @@ app.configure ->
 	app.use express.methodOverride()
 	app.use app.router
 	app.use require('connect-assets')()
-	app.use express.static(path.join(__dirname, 'public'))
+	app.use express.static(path.join(__dirname, '../', 'public'))
 
 # development only
 app.configure 'development', ->

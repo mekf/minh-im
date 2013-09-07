@@ -6,21 +6,26 @@ html
     != js('app_scripts')
   body
     header
-      nav.top-bar
-        ul.title-area
-          li.name
-            h1 
-              a(href='/') minh.im
-        section.top-bar-section
-          ul.right
-            li.divider
-            li
-              a(href='/') home
-            li.divider
-            li
-              a(href='/about') about me
-    
-    block content
+      .container
+        nav.top-bar
+          ul.title-area
+            li.name
+              h1 
+                a(href='/') minh.im
+          section.top-bar-section
+            ul.right
+              li.divider
+              li
+                a(href='/') home
+              li.divider
+              li
+                a(href='/about') about me
+    .container
+      .row
+        block content
     
     footer
-      p Running on NodeJS with Express, Jade, Stylus, and Zurb Foundation
+      .container
+        .row
+          hr
+          p Running on NodeJS with Express, Jade, Stylus, and Zurb Foundation
