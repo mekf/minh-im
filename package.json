@@ -3,12 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "coffee app.coffee"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "3.3.8",
     "jade": "*",
     "stylus": "*",
     "coffee-script": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-coffee": "~0.7.0"
   }
 }
