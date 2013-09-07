@@ -5,7 +5,7 @@ module.exports = (grunt) ->
 		coffee:
 			dist:
 				files: 
-					'./app.js': './app.coffee'
+					# './app.js': './app.coffee'
 
 		watch:
 			js:
