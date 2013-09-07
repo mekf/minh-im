@@ -11,15 +11,15 @@ app = express()
 # all environments
 app.configure ->
 	app.set 'port', process.env.PORT or 3000
-	app.set 'views', __dirname + '/views'
+	app.set 'views', path.join(__dirname, '/views')
 	app.set 'view engine', 'jade'
+	app.use require('connect-assets')()
+	app.use express.static(path.join(__dirname, '../', 'public')) # for images
 	app.use express.favicon()
 	app.use express.logger('dev')
 	app.use express.bodyParser()
 	app.use express.methodOverride()
 	app.use app.router
-	app.use require('connect-assets')()
-	app.use express.static(path.join(__dirname, '../', 'public'))
 
 # development only
 app.configure 'development', ->
