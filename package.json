@@ -9,7 +9,8 @@
     "express": "3.3.8",
     "jade": "*",
     "stylus": "*",
-    "coffee-script": "*"
+    "coffee-script": "*",
+    "connect-assets": "~2.5.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

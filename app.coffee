@@ -18,7 +18,7 @@ app.configure ->
 	app.use express.bodyParser()
 	app.use express.methodOverride()
 	app.use app.router
-	app.use require('stylus').middleware(__dirname + '/public')
+	app.use require('connect-assets')()
 	app.use express.static(path.join(__dirname, 'public'))
 
 # development only
@@ -28,8 +28,6 @@ app.configure 'development', ->
 # routes
 app.get '/', routes.index
 app.get '/about', routes.about
-
-# app.get '/users', user.list
 
 http.createServer(app).listen app.get('port'), ->
   console.log "Express server listening on port #{app.get('port')}"
