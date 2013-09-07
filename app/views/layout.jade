@@ -6,9 +6,19 @@ html
     != js('app_scripts')
   body
     header
-      a(href='/') Root
-      /
-      a(href='/about') About
+      nav.top-bar
+        ul.title-area
+          li.name
+            h1 
+              a(href='/') minh.im
+        section.top-bar-section
+          ul.right
+            li.divider
+            li
+              a(href='/') home
+            li.divider
+            li
+              a(href='/about') about me
     
     block content
     
