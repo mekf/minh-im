@@ -10,7 +10,8 @@
     "jade": "*",
     "stylus": "*",
     "coffee-script": "*",
-    "connect-assets": "~2.5.2"
+    "connect-assets": "~2.5.2",
+    "marked": "~0.2.9"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
