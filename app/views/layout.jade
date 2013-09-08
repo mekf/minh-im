@@ -7,19 +7,24 @@ html
   body
     header
       .container
-        nav.top-bar
-          ul.title-area
-            li.name
-              h1 
-                a(href='/') minh.im
-          section.top-bar-section
-            ul.right
-              li.divider
-              li
-                a(href='/') home
-              li.divider
-              li
-                a(href='/about') about me
+        center
+          a(href='/') home
+          &nbsp;-&nbsp;
+          a(href='/about') about me
+      //- .container
+      //-   nav.top-bar
+      //-     ul.title-area
+      //-       li.name
+      //-         h1 
+      //-           a(href='/') minh.im
+      //-     section.top-bar-section
+      //-       ul.right
+      //-         li.divider
+      //-         li
+                
+      //-         li.divider
+      //-         li
+                
     .container
       .row
         block content
