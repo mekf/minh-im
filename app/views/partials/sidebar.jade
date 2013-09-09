@@ -6,15 +6,15 @@
 
     [about me](/about)
 
-  h5
-    abbr categories
+  h6
+    span categories
   ul.lists
     - each cat in getCategories()
       li
         a(href=categoryURL(cat)) #{cat}
 
-  h5 
-    abbr tags
+  h6
+    span tags
   ul.lists
     - each tag in getTags()
       li
