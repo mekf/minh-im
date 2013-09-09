@@ -1,4 +1,4 @@
-exports.helpers =
+exports.locals =
 	monthNames: (index) -> 
 		switch index
 			when '0' then 'January'
