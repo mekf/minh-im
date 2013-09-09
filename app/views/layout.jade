@@ -9,17 +9,16 @@ html
       header
         .row
           .small-8.columns
-            center
-              a(href='/') home
-                | - 
-              a(href='/about') about me
-          .small-4.columns
+            include partials/navigation
+          .small-1.columns
+          .small-3.columns
               
       .row        
         .small-8.columns
           block content
-        .small-4.columns
-          div sidebar
+        .small-1.columns
+        .small-3.columns
+          include partials/sidebar
     
       footer
         .row

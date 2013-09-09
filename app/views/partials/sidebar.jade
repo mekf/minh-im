@@ -1,0 +1,21 @@
+.sidebar
+  :markdown
+    I'm Minh, a web developer based in Wellington, New Zealand.  
+
+    I enjoy writing program in Ruby and the Rails framework. NodeJS and CoffeeScript are my new interests.
+
+    [about me](/about)
+
+  h5
+    abbr categories
+  ul.lists
+    - each cat in getCategories()
+      li
+        a(href=categoryURL(cat)) #{cat}
+
+  h5 
+    abbr tags
+  ul.lists
+    - each tag in getTags()
+      li
+        a(href=tagURL(tag)) #{tag}
