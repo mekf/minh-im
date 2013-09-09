@@ -4076,7 +4076,8 @@ kbd {
     margin-left: 1.375em;
     display: block; }
     .inline-list > li > * {
-      display: block; }
+      /*display: block; */
+    }
 
 /* Default Pagination */
 ul.pagination {
