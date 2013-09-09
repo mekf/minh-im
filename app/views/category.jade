@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h5
+    a(href=categoryUrl(category)) posts in category * #{category}
+  - each post in posts
+    include partials/post_snippet
