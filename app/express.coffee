@@ -36,6 +36,7 @@ app.configure 'development', ->
 # routes
 app.get '/', routes.index
 app.get '/about', routes.about
+app.get '/archives', routes.archives
 
 http.createServer(app).listen app.get('port'), ->
   console.log "Express server listening on port #{app.get('port')}"

@@ -1,7 +1,8 @@
 extends layout
 
 block content
-  h5
-    a(href=tagUrl(tag)) posts tagged * #{tag}
+  h6
+    span
+      a(href=tagUrl(tag)) posts tagged * #{tag}
   - each post in posts
     include partials/post_snippet
