@@ -1,8 +1,14 @@
 extends layout
 
 block content
+  - monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  - postMonth = post.date.getMonth() + 1
+  - postMonthName = monthNames[postMonth]
+  - postDate = post.date.getDate()
+  - postYear = post.date.getFullYear()
   h6
-    span #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+    span #{postMonthName}, #{postDate} #{postYear}
+    
   .post
     h3.title
       a(href=post.url)
