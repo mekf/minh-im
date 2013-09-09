@@ -3,13 +3,21 @@ Module dependencies.
 ###
 express = require('express')
 routes = require('./routes/routes')
-# user = require('./routes/user')
 http = require('http')
 path = require('path')
+
+# init the express app
 app = express()
+
+# include poet + pass app to it
+poet = require('poet')(app,
+  posts: path.join(__dirname, '_posts')
+  metaFormat: 'json'
+)
 
 # all environments
 app.configure ->
+	poet.init().then ->
 	app.set 'port', process.env.PORT or 3000
 	app.set 'views', path.join(__dirname, '/views')
 	app.set 'view engine', 'jade'
