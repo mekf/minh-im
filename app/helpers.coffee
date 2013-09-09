@@ -1,6 +1,6 @@
-exports.locals =
+exports.helpers =
 	monthNames: (index) -> 
-		switch index
+		switch index.toString()
 			when '0' then 'January'
 			when '1' then 'February'
 			when '2' then 'March'
