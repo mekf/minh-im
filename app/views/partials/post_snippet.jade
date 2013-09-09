@@ -1,11 +1,12 @@
+h5
+  abbr #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
 div.post
-  h1
+  h4
     a(href=post.url)
       = post.title
-  span.date #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
   div.post.content
     != post.preview
-  div.tags
+  .tags
     - each tag in post.tags
       a(href=tagUrl(tag))
         span.label.label-info #{tag}
