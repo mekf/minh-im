@@ -1,3 +1,5 @@
+numeral = require('numeral')
+
 exports.helpers =
 	monthNames: (index) -> 
 		switch index.toString()
@@ -13,3 +15,6 @@ exports.helpers =
 			when '9' then 'October'
 			when '10' then 'November'
 			else 'December'
+	
+	formattedDateHelper: (num) ->
+		numeral(num).format('0o')

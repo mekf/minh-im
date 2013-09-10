@@ -1,7 +1,7 @@
 {{{
     "title"    : "Hello World, NodeJS and Express",
     "tags"     : [ "node", "express", "coffeescript", "hello world" ],
-    "category" : "node",
+    "category" : "development",
     "date"     : "9-10-2013",
     "preview"  : "Hello World. It's a simple blog written entirely in nodejs and express with coffeescript goodness"
 
