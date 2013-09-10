@@ -1,10 +1,5 @@
-- postMonth = post.date.getMonth()
-- postMonthName = monthNames(postMonth)
-- postDate = formattedDateHelper(post.date.getDate())
-- postYear = post.date.getFullYear()
-
 h6
-  span #{postMonthName}, #{postDate} #{postYear}
+  span #{formattedDate(post.date)}
 
 div.post
   h3.title

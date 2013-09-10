@@ -1,10 +1,10 @@
 ###
 Module dependencies.
 ###
-express = require('express')
-routes = require('./routes')
-http = require('http')
-path = require('path')
+express = require 'express'
+routes = require './routes'
+http = require 'http'
+path = require 'path'
 
 # init the express app
 app = express()
