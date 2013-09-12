@@ -104,7 +104,7 @@ module.exports:: =
 ```
 
 &nbsp;  
-At first glance, the CoffeeScript versions were straight ports from JavaScript and up until that moment I had been practising the these conversions without hiccup. Definetly something went wrong and I didn't know where it was so I tried mix-matching the JS and Coffee versions and the specs only failed if I used my Coffee version of the model. In the specs, I expected a new instance of the model to be created however the backtrace indicated the error `Expected undefined to be defined.`. Suddenly, I realised where my mistake was. The error was clear enough therefore had I understood JS and CoffeeScript better, I wouldn't have to spend the better part of my time trouble shooting with no target. It should be clear in the compiled JS.  
+At first glance, the CoffeeScript versions were straight ports from JavaScript and up until that moment I had been practising these conversions without hiccup. Definetly something went wrong and I didn't know where it was so I tried mix-matching the JS and Coffee versions and the specs only failed if I used my Coffee version of the model. In the specs, I expected a new instance of the model to be created however the backtrace indicated the error `Expected undefined to be defined.`. Suddenly, I realised where my mistake was. The error was clear enough therefore had I understood JS and CoffeeScript better, I wouldn't have to spend the better part of my time trouble shooting with no target. It should be clear in the compiled JS.  
 
 ```javascript
 module.exports = function(db) {
