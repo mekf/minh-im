@@ -1,7 +1,7 @@
-extends layout
+extends ../layout
 
 block content
   - each post in posts
     include partials/post_snippet
 
-  include partials/pagination
+  include ../shared/pagination

@@ -9,10 +9,16 @@ path = require 'path'
 # init the express app
 app = express()
 
-# include poet + pass app to it
+# include poet + pass app to it + custom routes
 poet = require('poet')(app,
-  posts: path.join(__dirname, 'views', '_posts')
-  metaFormat: 'json'
+  posts: path.join(__dirname, 'views', 'poet', '_posts')
+  metaFormat: 'json',
+  routes:  	
+    '/post/:post': 'poet/post'
+    '/page/:page': 'poet/page'
+    '/tag/:tag': 'poet/tag'
+    '/category/:category': 'poet/category'
+
 )
 
 # all environments
