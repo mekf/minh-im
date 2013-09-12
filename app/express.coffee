@@ -11,7 +11,7 @@ app = express()
 
 # include poet + pass app to it
 poet = require('poet')(app,
-  posts: path.join(__dirname, '_posts')
+  posts: path.join(__dirname, 'views', '_posts')
   metaFormat: 'json'
 )
 
@@ -22,7 +22,9 @@ app.configure ->
 	app.locals require('./helpers').helpers	# global variables or methods
 	app.set 'views', path.join(__dirname, '/views')
 	app.set 'view engine', 'jade'
-	app.use require('connect-assets')()
+	app.use require('connect-assets')(
+		src: path.join(__dirname, 'assets')
+		)
 	app.use express.static(path.join(__dirname, '../', 'public')) # for images
 	app.use express.favicon()
 	app.use express.logger('dev')
