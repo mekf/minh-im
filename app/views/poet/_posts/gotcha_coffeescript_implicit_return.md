@@ -6,7 +6,7 @@
 
 }}}
 
-I had been trying following this [tutorial](http://net.tutsplus.com/tutorials/javascript-ajax/build-a-complete-mvc-web-site-with-expressjs/) on Nettus+ where Krasimir Tsonev demonstrated the process of building a CRUD app on Node.JS and Express. Because I thought that I'd learn better if I applied my tweaks onto it, I restructured the app based on that of Rails and converted his JavaScript codes into CoffeeScript. Everything went on quite smoothly until I could not get the specs of the base model to pass with my CoffeeScript version. That was when I discovered the caveat of CoffeeScript implicit return.
+I had been trying following this [tutorial](http://net.tutsplus.com/tutorials/javascript-ajax/build-a-complete-mvc-web-site-with-expressjs/) on Tutplus where Krasimir Tsonev demonstrated the process of building a CRUD app on Node.JS and Express. Because I thought that I'd learn better if I applied my tweaks onto it, I restructured the app based on that of Rails and converted his JavaScript codes into CoffeeScript. Everything went on quite smoothly until I could not get the specs of the base model to pass with my CoffeeScript version. That was when I discovered the caveat of CoffeeScript implicit return.
 
 <!--more-->
 
@@ -150,6 +150,8 @@ module.exports = (db) ->
 Make sure that you understand what a CoffeeScript function actually returns and the implications in JavaScript. 
 
 #### References
+* My version of [express_crud](https://github.com/mekf/express_crud) on github
+* Tutplus [version](https://github.com/tutsplus/build-complete-website-expressjs)
 * [http://net.tutsplus.com/tutorials/javascript-ajax/build-a-complete-mvc-web-site-with-expressjs/](http://net.tutsplus.com/tutorials/javascript-ajax/build-a-complete-mvc-web-site-with-expressjs/)
 * [http://stackoverflow.com/questions/7391493/is-there-any-way-to-not-return-something-using-coffeescript](http://stackoverflow.com/questions/7391493/is-there-any-way-to-not-return-something-using-coffeescript)
 * [http://programmaticallyspeaking.com/why-i-hate-implicit-return-in-coffeescript.html](http://programmaticallyspeaking.com/why-i-hate-implicit-return-in-coffeescript.html)
