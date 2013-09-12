@@ -134,7 +134,7 @@ module.exports.prototype = {
 ```
 
 &nbsp;  
-CoffeeScript functions will automatically return their final values, even without using the `return` keyword. For a while it seemed a little weird, but as I didn't run into any issue with my simple codes I consistenly forgot about it. I assumed that this is a good practise for two reasons. First, the last thing a function processes should be the best it can return, or at least as good as `undefined`. Second, it means I can always assume that a function returns something. In this situation, I gave my spec a blank db `Object` and due to some reasons that I hadn't completely understood, the model returned an `undefined` value. It should be no brainer that something which is `undefined` cannot be expected `toBeDefined()`. In order to tell CoffeeScript to not return something explicitly, we have to make it so.
+CoffeeScript functions will automatically return their final values, even without using the `return` keyword. For a while it seemed a little weird, but as I didn't run into any issue with my simple codes I consistenly forgot about it. I assumed that this is a good practise for two reasons. First, the last thing a function processes should be the best it can return, or at least as good as `undefined`. Second, it means I can always assume that a function returns something. In this situation, I gave my specs a blank db `Object` and due to some reasons that I hadn't completely understood, the model returned an `undefined` value. It should be no brainer that something which is `undefined` cannot be expected `toBeDefined()`. In order to tell CoffeeScript to not return something explicitly, we have to make it so.
 
 ```coffeescript
 module.exports = (db) ->
