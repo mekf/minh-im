@@ -1,5 +1,5 @@
 {{{
-    "title"    : "Sublime Text Shows Full Path To Files",
+    "title"    : "Sublime Text Shows Full Path To File",
     "tags"     : [ "sublime text", "JSON", "OSX", "tips n' tricks" ],
     "category" : "development",
     "date"     : "9-18-2013"
