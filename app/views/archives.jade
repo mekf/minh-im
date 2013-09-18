@@ -4,4 +4,8 @@ block content
   h6
     span #{title}
 
-  p to be built 
+  - posts = getPosts()
+  - each post in posts
+    div(style='line-height: 1.5em;').
+      #{shortDate(post.date)} -
+      <a href="#{post.url}">#{post.title}</a>
