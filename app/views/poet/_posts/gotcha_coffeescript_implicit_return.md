@@ -1,6 +1,6 @@
 {{{
     "title"    : "Gotcha! CoffeeScript Implicit Return ... Or Not",
-    "tags"     : [ "node", "express", "coffeescript", "javascript", "gotcha", "tips n' tricks" ],
+    "tags"     : [ "Node", "Express", "CoffeeScript", "JavaScript", "gotcha", "tips n' tricks" ],
     "category" : "development",
     "date"     : "9-12-2013"
 

@@ -1,6 +1,6 @@
 {{{
     "title"    : "Sublime Text Shows Full Path To File",
-    "tags"     : [ "sublime text", "JSON", "OSX", "tips n' tricks" ],
+    "tags"     : [ "Sublime Text", "JSON", "OSX", "tips n' tricks" ],
     "category" : "development",
     "date"     : "9-18-2013"
 
@@ -12,7 +12,7 @@ Go to **Preferences – Settings – User** and then add this line:
 
 `"show_full_path": true`
 
-Restart and you are done. The title bar is now showing the full path to a certain file. This trick works in both Sublime Text 2 and 3.
+Restart Sublime and you are done. The title bar is now showing the full path to a certain file. This trick works in both Sublime Text 2 and 3.
 
 <!--more-->
 
